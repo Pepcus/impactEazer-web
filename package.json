@@ -1,0 +1,16 @@
+{
+  "name": "impecteaze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --watch sass/main.scss css/style.css",
+    "compile-sass": "node-sass  sass/main.scss css/style.css",
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

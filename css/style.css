@@ -139,6 +139,9 @@ a:link {
     .screen-xs {
       display: block; } }
 
+body {
+  padding: 120px 0 0 0; }
+
 footer {
   background-color: #000;
   color: #fff;
@@ -490,7 +493,7 @@ footer {
         position: relative;
         display: block;
         padding-top: 12px;
-        padding-bottom: 32px;
+        padding-bottom: 43px;
         font-weight: 500;
         letter-spacing: 1px;
         font-size: 16px;
@@ -578,7 +581,7 @@ footer {
           .navigation .navigationList .navigationList-item .navigationDropdown.navigationDropdown--big.navigationDropdown--col-2 .navigationDropdown__container {
             /* max-width: 1460px;*/
             margin: 0 auto;
-            padding: 2px 15px;
+            padding: 0 15px;
             display: block; }
             .navigation .navigationList .navigationList-item .navigationDropdown.navigationDropdown--big.navigationDropdown--col-2 .navigationDropdown__container .row.navigationDropdown--row {
               -webkit-box-orient: horizontal;
@@ -723,7 +726,8 @@ footer {
   margin-top: 20px; }
   .header-small .navigation .navigationList-link {
     color: #000 !important;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-bottom: 32px !important; }
     .header-small .navigation .navigationList-link:after {
       background-color: #fe6601 !important; }
   .header-small .navigation .navigationList-item--border .navigationList-link {

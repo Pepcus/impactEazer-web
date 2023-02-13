@@ -4,6 +4,24 @@
   background: #fff;
   color: #505050;
 
+  h2{
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 36px;
+    line-height: 44px;
+    color: #505050;
+    position: relative;
+    padding: 40px 60px;
+    &:after{
+      content: '';
+      position: absolute;
+      border-bottom: 4px solid #ff6e0d;
+      width: 45px;
+      top: 90px;
+      left: 60px;
+    }
+  }
+
   .start-up-support-help-row {
     display: flex;
     align-items: center;

@@ -214,17 +214,6 @@ body {
   .section-title h2 {
     font-weight: 700; }
 
-.supply-chain-sol-title-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/images/our-solution.jpg");
-  background-size: cover;
-  height: 60%;
-  width: 100%;
-  z-index: 1000;
-  background-position: left; }
-  @media (max-width: 767px) {
-    .supply-chain-sol-title-bg {
-      height: 30%; } }
-
 .supply-chain-content-desc {
   background: #fff;
   padding: 50px; }
@@ -1515,3 +1504,24 @@ footer {
         .title-banner.title-banner-big .title-banner-name p {
           font-size: 20px;
           line-height: 30px; } }
+  .title-banner .title-bg {
+    background-size: cover !important;
+    height: 75%;
+    width: 100%;
+    z-index: 1000;
+    background-position: left !important; }
+    .title-banner .title-bg.supply-chain-solutions_title-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); }
+    .title-banner .title-bg.business-solutions_title-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); }
+    .title-banner .title-bg.start-up-support_title-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"); }
+    .title-banner .title-bg.analytics-solutions_title-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/669612/pexels-photo-669612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); }
+    .title-banner .title-bg.talent-building_title-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://cdn.pixabay.com/photo/2017/10/22/09/02/training-2877134_960_720.jpg"); }
+    .title-banner .title-bg.personal-coaching-and-mentoring_title-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"); }
+    @media (max-width: 767px) {
+      .title-banner .title-bg {
+        height: 30%; } }

@@ -437,8 +437,7 @@ body {
 
 .start-up-support-help {
   position: relative;
-  z-index: 1;
-  background: #fff; }
+  z-index: 1; }
   .start-up-support-help h2 {
     font-weight: bold;
     letter-spacing: 0;
@@ -536,7 +535,6 @@ body {
       .start-up-support-help .start-up-support-help_features_img {
         padding: 0; } }
     .start-up-support-help .start-up-support-help_features_img .start-up-support-help-shap_img {
-      background: #99edd9;
       border-radius: 6px;
       height: 420px;
       display: -webkit-box;
@@ -548,8 +546,7 @@ body {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding: 0 14px;
-      background: #ff6e0d; }
+      padding: 0 14px; }
       @media (max-width: 767px) {
         .start-up-support-help .start-up-support-help_features_img .start-up-support-help-shap_img {
           padding: 20px 14px;
@@ -871,6 +868,9 @@ footer {
               left: 154px; } }
       footer .footer-container .page-footer-container-child img {
         width: 110px; }
+        @media (max-width: 767px) {
+          footer .footer-container .page-footer-container-child img {
+            width: 70px; } }
       footer .footer-container .page-footer-container-child p {
         font-weight: 400;
         font-size: 14px;

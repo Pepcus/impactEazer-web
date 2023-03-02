@@ -1,7 +1,6 @@
 .start-up-support-help {
   position: relative;
   z-index: 1;
-  background: #fff;
 
   h2{
     font-weight: bold;
@@ -127,7 +126,6 @@
 
 
     .start-up-support-help-shap_img {
-      background: #99edd9;
       border-radius: 6px;
       height: 420px;
       display: -webkit-box;
@@ -140,7 +138,6 @@
       -ms-flex-pack: center;
       justify-content: center;
       padding: 0 14px;
-      background: $themeColor;
       @media (max-width: 767px) {
         padding: 20px 14px;
         height: auto;

@@ -55,6 +55,9 @@ footer {
       }
       img {
         width: 110px;
+        @media (max-width: 767px) {
+          width: 70px;
+        }
       }
       p {
         font-weight: 400;

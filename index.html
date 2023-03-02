@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="icon" href="" type="image">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -28,8 +30,28 @@
 <section>
     <div id="headerContent"></div>
 </section>
-<section style="width: 100%; height: 100vh">
-    <h1>first page</h1>
+<div class="row">
+    <div id="owl-demo" class="owl-carousel owl-theme">
+
+        <div class="item"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="The Last of us"></div>
+        <div class="item"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="GTA V"></div>
+        <div class="item"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Mirror Edge"></div>
+
+    </div>
+</div>
+
+</section>
+<!-- END OF TESTIMONIALS -->
+<section class="section">
+    <div class="supply-chain-wrapper">
+        <div class="supply-chain-desc-container">
+            <div class="description">
+                <p>ImpactEaze is differentiated consulting and mentoring organization to create positive & sustainable Impact for business and for leaders. ImpactEaze brings solid functional experience and helps in finding solutions which are practical and improve Eaze of end to end operations. Our approach is to bring visible change with hand’s on support. We commit to work with similar passion which you have for your business.</p>
+                <p>Bigger objective is to create best in class future ready supply chains and business processes to deliver delightful customer value with Agility & Effectiveness. </p>
+                <p>Our Consulting Partners and Advisors are experienced and curated leaders who are some of best industry minds.</p>
+            </div>
+        </div>
+    </div>
 </section>
 <section>
     <div id="footerContent"></div>
@@ -40,18 +62,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
-<script type="text/javascript" src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
 <script type="text/javascript">
-	//JS comes here for this page.
-	$(function () {
-		$("#headerContent").load("header.html");
-		$("#footerContent").load("footer.html");
-	});
+    //JS comes here for this page.
+    $(function () {
+        $("#headerContent").load("header.html");
+        $("#footerContent").load("footer.html");
+    });
 </script>
 </body>
 </html>

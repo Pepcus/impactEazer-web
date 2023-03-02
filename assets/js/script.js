@@ -46,3 +46,35 @@ $(function() {
 
 
 });
+
+// ------------------------------------ animation on scroll start-------------------------------------------
+
+
+
+
+$(function() {
+	AOS.init();
+});
+// ------------------------------------ animation on scroll end-------------------------------------------
+
+$(function () {
+	setTimeout(function() {
+		$('.loading-wrapper').addClass('hide');
+	},100);
+});
+
+
+$("#owl-demo").owlCarousel({
+
+	navigation : true, // Show next and prev buttons
+
+	slideSpeed : 300,
+	paginationSpeed : 400,
+
+	items : 1,
+	itemsDesktop : false,
+	itemsDesktopSmall : false,
+	itemsTablet: false,
+	itemsMobile : false
+
+});

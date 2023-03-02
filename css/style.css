@@ -43,7 +43,7 @@ a:link {
   text-decoration: none; }
 
 ::selection {
-  background: orange;
+  background: #ff6e0d;
   color: #fff;
   text-shadow: none; }
 
@@ -1525,3 +1525,58 @@ footer {
     @media (max-width: 767px) {
       .title-banner .title-bg {
         height: 30%; } }
+
+.cards01__card {
+  margin: 0 20px; }
+  .cards01__card .cards01__card-item {
+    margin-bottom: 30px; }
+    @media (max-width: 768px) {
+      .cards01__card .cards01__card-item {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px; } }
+    .cards01__card .cards01__card-item .cards01__card-icon {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      min-height: 100px;
+      margin-bottom: 10px; }
+      .cards01__card .cards01__card-item .cards01__card-icon > .icon-border {
+        border-radius: 100%;
+        border: 2px dashed #333333;
+        padding: 8px; }
+        .cards01__card .cards01__card-item .cards01__card-icon > .icon-border > .icon-bg {
+          width: 70px;
+          height: 70px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #ff6e0d; }
+      .cards01__card .cards01__card-item .cards01__card-icon svg {
+        width: 30px;
+        height: 50px;
+        fill: #fff; }
+      .cards01__card .cards01__card-item .cards01__card-icon i {
+        font-size: 48px; }
+    .cards01__card .cards01__card-item .cards01__card-text {
+      width: 100%;
+      text-align: center;
+      position: relative; }
+      .cards01__card .cards01__card-item .cards01__card-text .cards10__card-heading {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 0; }
+        @media (max-width: 1200px) {
+          .cards01__card .cards01__card-item .cards01__card-text .cards10__card-heading {
+            font-size: 18px; } }
+        @media (max-width: 768px) {
+          .cards01__card .cards01__card-item .cards01__card-text .cards10__card-heading {
+            margin-bottom: 16px; } }
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: 70%; }

@@ -146,6 +146,14 @@ body {
 .supply-chain-wrapper {
   width: 1024px;
   margin: 40px auto 0; }
+  @media (max-width: 767px) {
+    .supply-chain-wrapper {
+      width: 100%;
+      margin: 0; } }
+  @media (max-width: 1024px) {
+    .supply-chain-wrapper {
+      width: 100%;
+      margin: 0; } }
   .supply-chain-wrapper .supply-chain-desc-container {
     width: 100%; }
     @media (max-width: 767px) {
@@ -211,6 +219,10 @@ body {
   margin: 0;
   position: relative;
   text-align: center; }
+  @media (max-width: 767px) {
+    .section-title {
+      font-size: 28px;
+      line-height: 45px; } }
   .section-title h2 {
     font-weight: 700; }
 
@@ -430,6 +442,9 @@ body {
     color: #505050;
     position: relative;
     padding: 40px 60px; }
+    @media (max-width: 767px) {
+      .start-up-support-help h2 {
+        padding: 0; } }
     .start-up-support-help h2:after {
       content: '';
       position: absolute;
@@ -437,6 +452,11 @@ body {
       width: 45px;
       top: 90px;
       left: 60px; }
+      @media (max-width: 767px) {
+        .start-up-support-help h2:after {
+          width: 65px;
+          top: 45px;
+          left: 42px; } }
   .start-up-support-help .start-up-support-help-row {
     display: flex;
     align-items: center;
@@ -1524,7 +1544,7 @@ footer {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"); }
     @media (max-width: 767px) {
       .title-banner .title-bg {
-        height: 30%; } }
+        height: 40%; } }
 
 .cards01__card {
   margin: 0 20px; }
@@ -1548,15 +1568,17 @@ footer {
         border: 2px dashed #333333;
         padding: 8px; }
         .cards01__card .cards01__card-item .cards01__card-icon > .icon-border > .icon-bg {
-          width: 70px;
-          height: 70px;
+          width: 90px;
+          height: 90px;
           border-radius: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
           background: #ff6e0d; }
+      .cards01__card .cards01__card-item .cards01__card-icon .stroke svg {
+        stroke: #fff; }
       .cards01__card .cards01__card-item .cards01__card-icon svg {
-        width: 30px;
+        width: 45px;
         height: 50px;
         fill: #fff; }
       .cards01__card .cards01__card-item .cards01__card-icon i {

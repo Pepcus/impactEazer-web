@@ -131,7 +131,7 @@
     z-index: 1000;
     background-position: left !important;
     @media (max-width: 767px) {
-      height: 30%;
+      height: 40%;
     }
   }
 }
@@ -159,8 +159,8 @@
         border: 2px dashed #333333;
         padding: 8px;
         >.icon-bg {
-          width: 70px;
-          height: 70px;
+          width: 90px;
+          height: 90px;
           border-radius: 100%;
           display: flex;
           align-items: center;
@@ -168,8 +168,13 @@
           background: #ff6e0d;
         }
       }
+      .stroke{
+        svg {
+          stroke: #fff;
+        }
+      }
       svg {
-        width: 30px;
+        width: 45px;
         height: 50px;
         fill: #fff;
       }

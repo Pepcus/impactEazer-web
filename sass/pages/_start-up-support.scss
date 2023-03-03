@@ -69,6 +69,9 @@
       @media (max-width: 767px) {
         margin-bottom: 40px;
       }
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
       .start-up-support-help-img {
         max-width: 1000px;
 
@@ -158,6 +161,9 @@
   .start-up-support-help-column-left {
     @media (max-width: 767px) {
       order: 2;
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
     }
   }
 }

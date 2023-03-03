@@ -9,9 +9,7 @@ $(function () {
 		let fullName = $('#name').val();
 		let email = $('#email').val();
 		let phone = $('#phone').val();
-		let company = $('#company').val();
 		let description = $('#description').val();
-		let attachment = $('#attachment')[0].files[0];
 		$('#submit').prop('disabled', true);
 		$("#submit").text("Sending...");
 		$('.loading').addClass('show');
@@ -21,9 +19,7 @@ $(function () {
 		formData.append('fullName', fullName);
 		formData.append('email', email);
 		formData.append('phone', phone);
-		formData.append('company', company);
 		formData.append('description', description);
-		formData.append('attachment', attachment);
 		$.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
 			type: 'POST',
 			data: formData,

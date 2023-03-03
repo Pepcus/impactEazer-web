@@ -52,9 +52,9 @@ $(function() {
 
 
 
-$(function() {
-	AOS.init();
-});
+// $(function() {
+// 	AOS.init();
+// });
 // ------------------------------------ animation on scroll end-------------------------------------------
 
 $(function () {

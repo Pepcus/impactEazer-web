@@ -247,10 +247,10 @@
         }
       }
       .cards10__card-description {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
-        @media(max-width: 1200px) {
-          margin-bottom: 16px;
+        @media(max-width: 767px) {
+          margin-bottom: 14px;
         }
       }
     }

@@ -70,6 +70,23 @@
       position: relative;
       vertical-align: top;
       display: inline-block;
+      &.active {
+        a {
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -1px;
+            background-color: $themeColor !important;
+            -webkit-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+
+      }
       + .navigationList-item {
         margin-left: 50px;
       }
@@ -115,6 +132,11 @@
         display: none;
         padding-left: 15px;
         padding-right: 15px;
+        a {
+          &:after {
+            content: none;
+          }
+        }
       }
       &.navigationList-item--dropdown--show {
         .navigationDropdown {
@@ -131,6 +153,14 @@
           .navigationDropdown-item {
             display: inline-block;
             width: 100%;
+            &.active {
+              color: #fe6601;
+              text-decoration: none;
+              background: #fe66011a;
+              .navigationDropdown-link {
+                color: #fe6601;
+              }
+            }
             .navigationDropdown-link {
               display: block;
               font-size: 16px;
@@ -139,6 +169,7 @@
               text-decoration: none;
               @include transition (color .2s ease);
               padding: 14px 15px;
+
               &:hover {
                 color: #fe6601;
                 text-decoration: none;
@@ -151,9 +182,9 @@
           }
         }
         .navigationList-link {
-          &:after {
-            width: 100%;
-          }
+          //&:after {
+          //  width: 100%;
+          //}
         }
       }
       .navigationDropdown {
@@ -363,6 +394,9 @@
   .navigation {
     float: right;
     margin-top: 20px;
+    @media(max-width: 767px) {
+      margin-top: 0;
+    }
     .navigationList-link {
       color: #000 !important;
       text-decoration: none;
@@ -569,6 +603,20 @@
     }
   }
 }
+
+//.mobileNavigationList-item {
+//  &.active {
+//    &:before {
+//      content: ' ';
+//      display: block;
+//      width: 100%;
+//      height: 2px;
+//      bottom: 0;
+//      background-color: $themeColor;
+//      @include transition (all .2s ease-in-out);
+//    }
+//  }
+//}
 
 .mobileNavigationList-item.active .mobileNavigation__wrapper {
   display: block;

@@ -2,9 +2,9 @@ $(function () {
 	//contact us form -- contact page
 	$('#contact-form').on('submit', function (event) {
 		event.preventDefault(); // prevent reload
-		let service_id = "default_service";
-		let template_id = "pepcuscontact";
-		let user_id = "user_QjC9ZSKm2Rl96TpEZy1Ov"
+		let service_id = "";
+		let template_id = "";
+		let user_id = ""
 		let formData = new FormData();
 		let fullName = $('#name').val();
 		let email = $('#email').val();
@@ -42,7 +42,7 @@ $(function () {
 			$('.loading').removeClass('show');
 			$('#submit').prop('disabled', false);
 			bootbox.alert({
-				message: JSON.stringify(error),
+				message:"Sorry for the inconvenience. Email feature is under development.",
 				backdrop: true,
 				className: 'rubberBand animated'
 			});

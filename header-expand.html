@@ -3,7 +3,7 @@
   <div class="mobileNavigation-container" style="padding-top: 0px;">
     <div class="mfp-content">
       <div id="mobileNavigation" class="mobileNavigation">
-        <ul class="mobileNavigationList">
+        <ul class="mobileNavigationList navigationApplication">
           <li class="mobileNavigationList-item first">
             <a
               class="mobileNavigationList-link mobileNavigationList-dropdown" href="../index.html">About Us</a>
@@ -45,7 +45,7 @@
           </a>
         </div>
         <nav class="navigation navigation_normal">
-          <ul class="navigationList">
+          <ul class="navigationList navigationApplication">
             <li class="navigationList-item navigationList-item--big-menu">
               <a
                 class="navigationList-link" href="../index.html">About Us</a>
@@ -92,3 +92,25 @@
   </div>
 </header>
 <script src="../assets/js/script.js"></script>
+<script>
+	$(document).ready(function(){
+		const currentPage = window.location.pathname;
+		const currentPageSplite = currentPage.split("/");
+		const currentPageLength = currentPageSplite.slice(Math.max(currentPageSplite.length - 2, 0));
+		const currentPageUnshift = currentPageLength.unshift('..');
+		const currentPageName = currentPageLength.join("/");
+
+
+		$(".navigationApplication li a").each(function(){
+			console.log('($(this).attr("href")', ($(this).attr("href")));
+			if(($(this).attr("href")) === currentPageName) {
+				$(this).parent('li').addClass("active").siblings().removeClass("active");
+				$(this).parents('li').addClass("active").siblings().removeClass("active");
+			}
+			if(currentPageName === '/')
+				if($(this).attr("href") === "index.html") {
+					$(this).parent('li').addClass("active");
+				}
+		})
+	})
+</script>

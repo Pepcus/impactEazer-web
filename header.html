@@ -3,7 +3,7 @@
     <div class="mobileNavigation-container" style="padding-top: 0px;">
         <div class="mfp-content">
             <div id="mobileNavigation" class="mobileNavigation">
-                <ul class="mobileNavigationList">
+                <ul class="mobileNavigationList navigationApplication">
                     <li class="mobileNavigationList-item first">
                         <a
                           class="mobileNavigationList-link mobileNavigationList-dropdown" href="index.html">About Us</a>
@@ -45,7 +45,7 @@
                     </a>
                 </div>
                 <nav class="navigation navigation_normal">
-                    <ul class="navigationList">
+                    <ul class="navigationList navigationApplication">
                         <li class="navigationList-item navigationList-item--big-menu">
                             <a
                               class="navigationList-link" href="index.html">About Us</a>
@@ -92,3 +92,19 @@
     </div>
 </header>
 <script src="assets/js/script.js"></script>
+<script>
+    $(document).ready(function(){
+        const currentPage = window.location.pathname;
+        const currentPageOne = currentPage.split("/").pop();
+        $(".navigationApplication li a").each(function(){
+            if($(this).attr("href") === currentPageOne)
+                $(this).parent('li').addClass("active").siblings().removeClass("active");
+
+            if(currentPageOne === '/')
+                console.log('this is empty');
+            if($(this).attr("href") === "index.html") {
+                $(this).parent('li').addClass("active");
+            }
+        })
+    })
+</script>

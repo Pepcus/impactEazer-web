@@ -1,2 +1,20 @@
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variable";
 
+@import "base/base";
+
+@import "components/loader";
+
+@import "pages/supply-chain-solutions";
+@import "pages/start-up-support";
+@import "pages/personal-coaching-mentoring";
+@import "pages/our-client";
+@import "pages/contact-page";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/layout";
+
+@import "vendors/bootstrap";
 

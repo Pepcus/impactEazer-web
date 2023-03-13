@@ -1,0 +1,58 @@
+.our-client-detail{
+  padding: 40px 0;
+  .our-client-detail-wrapper{
+    width: 1168px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+      .our-client-container{
+        padding: 0 10px 0 0;
+
+        .our-client-detail-cards{
+          background: #fff;
+          border-radius: 10px;
+          padding: 20px 15px;
+          box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+        .our-client-image{
+          margin: 20px 0;
+          display: flex;
+          justify-content: center;
+          img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+          }
+        }
+        .our-client-detail-description{
+          padding: 20px 0;
+          h4{
+            text-align: center;
+            color: #1D1E21;
+            text-transform: capitalize;
+            font-size: 32px;
+            font-weight: 600;
+          }
+          p{
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+        .our-client-detail-button{
+          display: flex;
+          justify-content: center;
+          a{
+            border: none;
+            font-size: 15px;
+            color: $themeColor;
+            font-weight: 500;
+            &:hover{
+              filter: opacity(0.8);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

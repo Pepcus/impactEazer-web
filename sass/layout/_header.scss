@@ -17,10 +17,11 @@
     .logo-link {
       display: block;
       img {
-        width: 80px;
+        width: 75px;
         filter: drop-shadow(30px 30px 200px #fff) drop-shadow(-30px -30px 40px #fff);
         @media (max-width:767px) {
-          width: 70px;
+          width: 65px;
+
         }
       }
     }
@@ -43,7 +44,7 @@
     .logo {
       .logo-link {
         img {
-          width: 70px;
+          width: 65px;
         }
       }
     }
@@ -154,11 +155,11 @@
             display: inline-block;
             width: 100%;
             &.active {
-              color: #fe6601;
+              color: $themeColor;
               text-decoration: none;
-              background: #fe66011a;
+              background: #ffeed5;
               .navigationDropdown-link {
-                color: #fe6601;
+                color: $themeColor;
               }
             }
             .navigationDropdown-link {
@@ -171,9 +172,9 @@
               padding: 14px 15px;
 
               &:hover {
-                color: #fe6601;
+                color: $themeColor;
                 text-decoration: none;
-                background: #fe66011a;
+                background: #ffeed5;
               }
             }
             &:first-child {

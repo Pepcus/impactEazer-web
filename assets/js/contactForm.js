@@ -2,14 +2,14 @@ $(function () {
 	//contact us form -- contact page
 	$('#contact-form').on('submit', function (event) {
 		event.preventDefault(); // prevent reload
-		let service_id = "";
-		let template_id = "";
-		let user_id = ""
+		let service_id = "default_service";
+		let template_id = "template_impacteazer";
+		let user_id = "m9mRvellAQoIF_rSS";
 		let formData = new FormData();
 		let fullName = $('#name').val();
 		let email = $('#email').val();
 		let phone = $('#phone').val();
-		let description = $('#description').val();
+		let message = $('#message').val();
 		$('#submit').prop('disabled', true);
 		$("#submit").text("Sending...");
 		$('.loading').addClass('show');
@@ -19,7 +19,7 @@ $(function () {
 		formData.append('fullName', fullName);
 		formData.append('email', email);
 		formData.append('phone', phone);
-		formData.append('description', description);
+		formData.append('message', message);
 		$.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
 			type: 'POST',
 			data: formData,
@@ -42,7 +42,7 @@ $(function () {
 			$('.loading').removeClass('show');
 			$('#submit').prop('disabled', false);
 			bootbox.alert({
-				message:"Sorry for the inconvenience. Email feature is under development.",
+				message:"Oops, something went wrong. Please try again later.",
 				backdrop: true,
 				className: 'rubberBand animated'
 			});

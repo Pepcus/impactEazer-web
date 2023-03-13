@@ -70,7 +70,10 @@ $("#owl-demo").owlCarousel({
 
 	slideSpeed : 300,
 	paginationSpeed : 400,
-
+	autoplayHoverPause: true,
+	autoplayTimeout: 10000,
+	autoplay: true,
+	loop: true,
 	items : 1,
 	itemsDesktop : false,
 	itemsDesktopSmall : false,

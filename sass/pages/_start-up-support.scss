@@ -15,7 +15,7 @@
     &:after{
       content: '';
       position: absolute;
-      border-bottom: 4px solid #ff6e0d;
+      border-bottom: 4px solid $themeColor;
       width: 45px;
       top: 90px;
       left: 60px;

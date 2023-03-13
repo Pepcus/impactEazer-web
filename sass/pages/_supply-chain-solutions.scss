@@ -103,6 +103,9 @@
       height: 60px;
       fill: $themeColor;
       color: $themeColor;
+      path {
+        fill: $themeColor;
+      }
       @media (max-width: 767px) {
         height: 50px;
       }
